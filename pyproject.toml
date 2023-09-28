@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "offline-rl"
+version = "0.1.0"
+description = ""
+authors = ["Tristan Beolet <tristan.beolet@diabeloop.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.11.0"
+gymnasium = "^0.29.1"
+beartype = "^0.16.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
